@@ -29,6 +29,7 @@
       }
 
       body {
+        background-color: black;
         font-family: "Nunito Sans", sans-serif;
         line-height: 1.6;
         color: #333;
@@ -52,7 +53,7 @@
         right: 0;
         z-index: 1000;
         padding: 20px 0;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgb(0, 0, 0);
         backdrop-filter: blur(10px);
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
@@ -90,7 +91,7 @@
       }
 
       .logo {
-        color: #000000;
+        color: #ffffff;
         font-size: 24px;
         font-weight: bold;
         letter-spacing: 2px;
@@ -102,7 +103,7 @@
         gap: 1px;
       }
       .nav-menu a {
-        color: #666;
+        color: #ffffff;
         text-decoration: none;
         font-size: 16px;
         padding: 12px 24px;
@@ -110,16 +111,17 @@
         transition: all 0.3s ease;
         cursor: pointer;
         border-radius: 0;
+          background: #262626;
       }
 
       .nav-menu a:hover {
-        background: #f0f0f0;
+        background: #656565;
         color: #333;
       }
 
       .nav-menu a.active {
-        background: #999;
-        color: white;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
       }
 
       /* HOME PAGE */
@@ -161,7 +163,6 @@
         line-height: 1.3;
         letter-spacing: 3px;
         max-width: 1200px;
-
         overflow: hidden;
       }
 
@@ -203,6 +204,7 @@
       .content-section {
         margin-top: 2rem;
         padding: 80px 0;
+
       }
 
       .container {
@@ -294,7 +296,7 @@
       /* Choice Section */
       .choice-section {
         padding: 80px 20px;
-        background: #f5f5f5;
+        background: url("asset/dark.jpg") no-repeat center center/cover;
         text-align: center;
       }
 
@@ -308,7 +310,7 @@
       .choice-title {
         font-size: 48px;
         font-weight: 300;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 60px;
         letter-spacing: 1px;
       }
@@ -322,7 +324,7 @@
       }
 
       .choice-card {
-        background: white;
+        background: rgb(0, 0, 0);
         border-radius: 0;
         overflow: hidden;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -337,7 +339,7 @@
       }
 
       .choice-header {
-        background: #777;
+        background: #161616;
         color: white;
         padding: 20px;
         font-size: 16px;
@@ -395,7 +397,7 @@
 
       .here {
         min-height: 50vh;
-        background: url("asset/idea.jpg");
+        background: url("asset/idea2.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -421,7 +423,7 @@
       .title {
         font-size: 5rem;
         font-weight: 700;
-        color: #666;
+        color: #ffffff;
         margin-bottom: 40px;
         letter-spacing: -2px;
       }
@@ -441,7 +443,7 @@
       }
 
       .feature-number {
-        background: #2c2c2ca4;
+        background: #000715de;
         color: white;
         width: 60px;
         height: 60px;
@@ -453,14 +455,14 @@
         font-size: 1.2rem;
         margin-right: 20px;
         flex-shrink: 0;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 4px 15px rgba(137, 102, 234, 0.3);
       }
 
       .feature-text {
         flex: 1;
         font-size: 1.3rem;
         line-height: 1.7;
-        color: #555;
+        color: #888;
       }
 
       /* Hamburger Menu Styles */
@@ -551,56 +553,78 @@
       }
 
       /* ABOUT PAGE */
-      .about-page {
-        position: relative;
-      }
-      .about-hero {
-        display: flex;
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-image: url("asset/hand.jpg");
-        text-align: center;
-        color: white;
-        z-index: 1;
-        align-items: center;
-        justify-content: center;
-      }
-      .about-hero .about-content {
-        background: transparent;
-        color: rgb(255, 255, 255);
-        max-width: 900px;
-        padding: 0 10px;
-        z-index: 2;
-        animation: fadeInUp 1s ease;
-      }
+.about-page {
+  position: relative;
+  box-sizing: border-box;
+}
 
-      .about-hero h1 {
-        font-size: 1.2rem;
-        font-weight: 300;
-        letter-spacing: 2px;
-        font-weight: bold;
-      }
+.about-hero { display: flex; position: relative; background-size: cover; background-repeat: no-repeat; height: 100vh; background-image: url("asset/dark.jpg"); text-align: center; color: white; z-index: 1; align-items: center; justify-content: center; } 
+.about-hero .about-content { background: transparent; color: rgb(255, 255, 255); max-width: 900px; padding: 0 10px; z-index: 2; animation: fadeInUp 1s ease; }
 
-      .about-hero p {
-        font-size: 5rem;
-        opacity: 0.9;
-        max-width: 800px;
-        font-weight: 200;
-        line-height: 1.6;
-      }
+.about-hero h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
 
-      .about-content {
-        background: white;
-        padding: 80px 0;
-      }
+.about-hero p {
+  font-size: 5rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 20px auto;
+  font-weight: 200;
+  line-height: 1.6;
+}
 
-      .about .content-section {
-        padding: 0 70px;
-        max-width: 900px;
-        margin: 0 auto 60px;
-        text-align: center;
+.about-content {
+  background: rgb(0, 0, 0);
+  padding: 80px 0; /* kasih jarak kiri-kanan */
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+.about-page .content-sectionx {
+  margin-top: 2rem;
+  padding: 80px 20px; /* jarak dalam kiri-kanan */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-page .content-sectionx .top-text h1 {
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.about-page .content-sectionx .top-text p,
+.about-page .content-sectionx .bottom-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 800px; /* biar teks tidak terlalu panjang */
+  text-align: center;
+}
+
+.about-page .content-sectionx .image-container {
+  position: relative;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px; /* biar gambar proporsional */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+      .main-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
       }
 
       .about-grid {
@@ -652,7 +676,10 @@
       }
 
       .mission-section {
-        background: #f8f9fa;
+        background: url("asset/man2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 80px 0;
         text-align: center;
       }
@@ -675,7 +702,7 @@
         font-style: italic;
         font-size: 30px;
         line-height: 1.3;
-        color: #666;
+        color: #999;
         max-width: 1500px;
         margin-bottom: 20px;
       }
@@ -766,6 +793,9 @@
           grid-template-columns: 1fr;
           gap: 40px;
           padding: 0 20px;
+        }
+        .about-page .content-sectionx .top-text p {
+          text-align: left;
         }
       }
 
@@ -859,7 +889,7 @@
       .top-text p {
         font-size: 1.5rem;
         line-height: 1.6;
-        color: #555;
+        color: #ffffff;
         max-width: 900px;
         margin: 0 auto;
       }
@@ -885,6 +915,7 @@
         border-radius: 12px;
         margin-bottom: 20px;
         position: relative;
+        
       }
 
       .bottom-title-section::before {
@@ -915,7 +946,7 @@
       }
 
       .bottom-text {
-        color: #666;
+        color: #ffffff;
         font-size: 1.5rem;
         line-height: 1.5;
         text-align: center;
@@ -936,6 +967,13 @@
 
         .top-text p {
           font-size: 16px;
+        }
+
+        .about-page .content-sectionx .top-text h1 {
+          font-size: 24px;
+        }
+        .about-page .content-sectionx .top-text p {
+          font-size:16px;
         }
 
         .bottom-title-section {
@@ -963,7 +1001,7 @@
       }
 
       @media (max-width: 480px) {
-        .content-section {
+        .content-sectionx {
           padding: 15px 10px;
         }
 
@@ -996,7 +1034,7 @@
 
       .section {
         padding: 60px 20px;
-        color: #666;
+    
       }
 
       .container {
@@ -1006,6 +1044,7 @@
       }
 
       .title {
+        color:white;
         font-size: 28px;
         margin-bottom: 40px;
       }
@@ -1023,7 +1062,7 @@
       }
 
       .card {
-        background: #a6a6a6;
+        background: #000000;
         border: 1px solid rgba(173, 173, 173, 0.295);
         color: white;
         padding: 20px;
@@ -1042,7 +1081,7 @@
         gap: 10px;
         margin-bottom: 12px;
         font-size: 20px;
-        color: #555;
+        color: #ffffff;
       }
 
       .card-content {
@@ -1068,8 +1107,8 @@
       .icon-container {
         width: 100px;
         height: 100px;
-        background: #9ca3af;
-        border-radius: 20px;
+        background: #181818;
+        border-radius: 10px;
         margin: 0 auto 30px;
         display: flex;
         align-items: center;
@@ -1086,7 +1125,7 @@
 
       h2 {
         font-size: 28px;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 20px;
         font-weight: 700;
         position: relative;
@@ -1105,7 +1144,7 @@
       }
 
       .description {
-        color: #666;
+        color: #ffffff;
         font-size: 20px;
         max-width: 600px;
         margin: 0 auto;
@@ -1156,7 +1195,7 @@
       }
 
       .mission-text {
-        color: #555;
+        color: #888;
         font-size: 20px;
         line-height: 1.7;
       }
@@ -1253,8 +1292,9 @@
       .footer {
         position: relative;
         z-index: 999;
-        background: white;
+        background: rgb(0, 0, 0);
         padding: 60px 0 20px 0;
+        color: white;
         border-top: 2px solid black;
       }
 
@@ -1276,14 +1316,13 @@
 
       .footer-section p,
       .footer-section a {
-        color: #333;
+        color: #ffffff;
         text-decoration: none;
         line-height: 1.8;
         transition: color 0.3s ease;
       }
 
       .footer-section a:hover {
-        color: #666;
         text-decoration: underline;
       }
 
@@ -1308,7 +1347,7 @@
         margin-bottom: 15px;
       }
       .footer-section h3 {
-        color: #000;
+        color: #ffffff;
       }
 
       .footer .one {
@@ -2133,7 +2172,7 @@
       </section>
 
       <!-- Content Section -->
-      <section class="content-section" id="content-sectionx">
+      <section class="content-sectionx" id="content-sectionx">
         <div class="top-text">
           <h1>Generation Z Identity & Empowerment</h1>
           <p>
@@ -2226,14 +2265,14 @@
         <div class="team-members">
           <div class="team-member">
             <img src="asset/Team/silvia.jpg" alt="Silvia Manao" />
-            <p style="font-weight: bold">- Silvia Manao -</p>
-            <p style="font-size: 15px">Ide Kreatif & Penulis Konten</p>
+            <p style="font-weight: bold; color: white;">- Silvia Manao -</p>
+            <p style="font-size: 15px; color: #888;">Ide Kreatif & Penulis Konten</p>
           </div>
 
           <div class="team-member">
             <img src="asset/Team/maya.jpg" alt="Maya" />
-            <p style="font-weight: bold">- Maya Saira -</p>
-            <p style="font-size: 15px">UI Designer</p>
+            <p style="font-weight: bold; color: white;">- Maya Saira -</p>
+            <p style="font-size: 15px; color: #888;">UI Designer</p>
           </div>
         </div>
       </section>
@@ -4425,5 +4464,6 @@
     </script>
   </body>
 </html>
+
 
 
