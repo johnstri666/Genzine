@@ -180,21 +180,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh; /* supaya penuh layar */
+  height: 15vh; /* supaya penuh layar */
 }
 .back a {
   font-size: 1.3rem;
-  padding: 10px 40px;
-  color: white;
-  background-color: #666;
-  border-radius: 5px;
+  padding: 10px 60px;
+  color: rgb(255, 255, 255);
+  background-color: #171717;
   text-decoration: none;
-  border: 2px solid #666;
+  border: 2px solid #333333;
 }
 .back a:hover {
   background-color: white;
   color: black;
-  border-color: black;
+  border-color: rgb(0, 0, 0);
 }
 
 /*BeYou*/
