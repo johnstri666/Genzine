@@ -199,7 +199,7 @@
 /*BeYou*/
 .beyou-page {
   min-height: min-content;
-  background: #ffffff;
+  background: #000000;
 }
 
 .beyou-hero {
@@ -231,7 +231,7 @@
 }
 
 .category-title {
-  background: #666;
+  background: #000000;
   color: white;
   padding: 18px 25px;
   font-weight: 600;
@@ -240,6 +240,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .arrow {
@@ -252,7 +253,7 @@
 
 .category-content {
   display: none;
-  background: #f9fafb;
+  background: #141414;
   padding: 20px 25px;
 }
 
@@ -261,7 +262,7 @@
 }
 
 .category-description {
-  color: #555;
+  color: white;
   margin-bottom: 20px;
   padding: 15px;
   font-size: 16px;
@@ -269,22 +270,21 @@
 }
 
 .question-block {
-  background-color: white;
+  background-color: #141414;
   margin-bottom: 15px;
-  border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #e5e7eb;
 }
 
 .question-title {
-  background: #d9d9d9;
+  color: white;
+  background: #141414;
   padding: 15px 20px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .question-details {
@@ -299,8 +299,9 @@
 .question-text {
   margin-bottom: 15px;
   padding: 12px;
-  background: #eef6ff;
+  background: #7a7a7a;
   border-radius: 6px;
+  color: white;
 }
 
 .response-block {
@@ -310,11 +311,12 @@
 .response-heading {
   font-weight: 600;
   margin-bottom: 10px;
-  color: #2d3748;
+  color: white;
 }
 
 .response-content {
-  background: #f1f5f9;
+  color: #999;
+  background: #2b2b2b;
   padding: 15px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -340,7 +342,7 @@
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
-  background: #d9d9d9;
+  background: #999999;
   margin: 15px 0;
   border-radius: 8px;
 }
@@ -361,6 +363,7 @@
 }
 
 .textx {
+  color: white;
   width: 80%;
   text-align: center;
   justify-content: center;
