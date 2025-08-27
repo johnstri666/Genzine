@@ -1602,7 +1602,6 @@
       }
 
       .conformometer-page {
-        background: #ffffff;
         position: relative;
       }
 
@@ -1625,6 +1624,7 @@
         flex-direction: column;
         gap: 15px;
         margin: 25px 0;
+        max-width: 900px;
       }
 
       .zone-item {
@@ -1633,8 +1633,9 @@
         align-items: center;
         gap: 15px;
         padding: 15px;
-        background: rgba(255, 255, 255, 0.1); 
+        background: rgb(31, 31, 31); 
         border-left: 5px solid;
+        color: white;
       }
       .zone-green {
         border-top-color: #10b981;
@@ -1652,7 +1653,6 @@
        .zone-color {
         width: 22px;
         height: 22px;
-        border-radius: 10%;
         flex-shrink: 0;
       }
 
@@ -1673,44 +1673,55 @@
       }
 
       .contentxx {
-        background-color: #e4e4e4;
+        background-color: #000000;
         padding: 30px 40px;
-        margin: 0 40px 20px 40px;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: center; /* horizontal center */
+        align-items: center;     /* vertical center */
       }
 
-      .contentxx .btn {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        padding: 16px 15px;
-        background: #666;
-        color: rgb(0, 0, 0);
-        font-size: 1.1rem;
-        font-weight: 300;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-align: center;
-        margin-top: 20px;
+      .contentxx h3 {
+        color: white;
+
+      } 
+      .contentxx  p {
+          color: #999;
       }
+      .contentxx  p strong {
+        color: white;
+      }
+
+    .contentxx .btn {
+    margin-top: 2rem;
+    padding: 16px 15px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    }
 
       .btn:hover {
         background: transparent;
-        color:rgb(0, 0, 0)
+        color:rgb(255, 255, 255)
  
       }
 
       .btn-primary {
-        background: rgb(158, 224, 255);
         font-size: 1.2rem;
       }
       
 
       .quiz {
-         margin: 0 auto; /* tengah */
-          padding: 30px 30px; /* jarak dalam kiri kanan + atas bawah */
-          background-color: #737373;
-          border-radius: 16px; /* opsional biar lebih rapi */
-          max-width: 1000px; /* batas lebar biar tidak melebar ke seluruh layar */
+        margin: 0 auto; /* tengah */
+        padding: 30px 30px; /* jarak dalam kiri kanan + atas bawah */
+        background-color: #000000;
+        border-color: #141414;
+        max-width: 900px; /* batas lebar biar tidak melebar ke seluruh layar */
         box-sizing: border-box;
       }
 
@@ -1720,18 +1731,16 @@
         background: #ffffff;
         margin: 30px 0;
         overflow: hidden;
-        border-radius: 10px;
       }
 
       .progress-fill {
-        border-radius: 10px;
         height: 100%;
         background: rgb(1, 158, 243);
         width: 0%;
         transition: width 0.4s ease;
       }
 
-       .question-container {
+      .question-container {
         margin-bottom: 30px;
         min-height: 280px;
       }
@@ -1764,8 +1773,8 @@
         line-height: 1.5;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         padding: 30px 40px;
-        background-color: #e5e5e5;
-        color: black;
+        background-color: #2d2d2d;
+        color: rgb(255, 255, 255);
       }
 
       .question-number {
@@ -1796,7 +1805,6 @@
         padding: 16px 20px;
         background: rgba(255, 255, 255, 0.1);
         border: 2px solid rgba(255, 255, 255, 0.2);
-        border-radius: 12px;
         font-size: 1rem;
         font-weight: 500;
         color: white;
@@ -1816,7 +1824,7 @@
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
       }
 
-        .navigation {
+      .navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1825,12 +1833,11 @@
 
       .nav-btn {
         margin: 0 5px;
- padding: 30px 40px;
+        padding: 10px 20px;
         font-size: 1rem;
         font-weight: 600;
         cursor: pointer;
         border: none;
-        border-radius: 12px;
         transition: all 0.2s ease;
         background: rgba(255, 255, 255, 0.15);
         color: white;
@@ -1865,6 +1872,7 @@
       }
 
       .question-indicator {
+        color: #999;
         font-size: 1rem;
         font-weight: 500;
         opacity: 0.9;
@@ -1878,22 +1886,24 @@
       }
 
       .score-circle {
-        width: 160px;
-        height: 160px;
+        color: white;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         margin: 30px auto;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 2.5rem;
-        font-weight: 800;
-        background: rgba(255, 255, 255, 0.1);
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.1);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         border: 6px solid;
         backdrop-filter: blur(5px);
       }
 
       .zone-title {
+        color:white;
         font-size: 1.8rem;
         font-weight: 700;
         margin: 25px 0 15px 0;
@@ -1901,6 +1911,7 @@
       }
 
       .explanation {
+        color:#999;
         font-size: 1.1rem;
         line-height: 1.6;
         margin-bottom: 40px;
@@ -1952,15 +1963,15 @@
       }
 
       .result .btn {
-        background: transparent;
+        background: white;
         padding: 10px 20px;
         margin-bottom: 2rem;
-        color: black;
+        color: rgb(0, 0, 0);
         border: 2px solid black;
       }
 
       .result .btn:hover {
-        background: black;
+        background: #171717;
         color: white;
       }
     </style>
@@ -3158,39 +3169,39 @@
         </section>
         
         <div class="textx">
-         <h1>🧠 Conformometer</h1>
-        <p>  Tes Tendensi Konformitas - Ukur seberapa jauh kamu ikut arus sosial
+         <h1>Conformometer</h1>
+        <p>Tes Tendensi Konformitas - Ukur seberapa jauh kamu ikut arus sosial
         </p>
         </div>
         <div class="contentxx" id="intro">
-            <h3>Zona Hasil:</h3>
+            <h3>Zona Hasil</h3>
             <div class="zones">
-          <div class="zone-item zone-green">
+              <div class="zone-item zone-green">
             <div class="zone-color"></div>
             <div class="zone-text">
               <strong>Authentic Self (Hijau)</strong> – Kamu lebih mandiri,
               punya pendirian, dan tidak mudah terbawa arus.
             </div>
-          </div>
-          <div class="zone-item zone-yellow">
+              </div>
+            <div class="zone-item zone-yellow">
             <div class="zone-color"></div>
             <div class="zone-text">
               <strong>Seekers (Kuning)</strong> – Kamu kadang masih mencari jati
               diri dan menyesuaikan diri dengan kelompok.
             </div>
-          </div>
-          <div class="zone-item zone-red">
+              </div>
+            <div class="zone-item zone-red">
             <div class="zone-color"></div>
             <div class="zone-text">
               <strong>Conformers (Merah)</strong> – Kamu cenderung ikut arus
               tanpa banyak refleksi, penting untuk belajar mengenali diri lebih
               dalam.
             </div>
-          </div>
+              </div>
             </div>
 
             <p>
-            <strong>🎯 Tujuan Fitur:</strong> Memberikan pemahaman awal tentang
+            <strong>Tujuan Fitur</strong> <br> Memberikan pemahaman awal tentang
             tingkat konformitas sosial seseorang melalui kuis berbasis skoring.
             Hasilnya diklasifikasikan dalam tiga zona untuk memandu pengguna
             merefleksikan diri, memahami pengaruh sosial, dan mencari cara menjadi
@@ -3198,7 +3209,7 @@
             </p>
 
              <p>
-            <strong>📖 Deskripsi Fitur:</strong> Conformometer merupakan kuis
+            <strong>Deskripsi Fitur</strong> <br>  Conformometer merupakan kuis
             reflektif berbasis The Conformity Scale (TCS) yang sudah banyak
             digunakan dalam penelitian psikologi sosial. Kuis ini terdiri dari 12
             pertanyaan yang menggambarkan situasi nyata sehari-hari, seperti cara
