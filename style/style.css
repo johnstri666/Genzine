@@ -5,7 +5,7 @@
 }
 
 .genzopedia-hero {
-  height: 60vh;
+  height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/asset/book.jpg") no-repeat center center/cover;
   display: flex;
@@ -203,7 +203,7 @@
 }
 
 .beyou-hero {
-  min-height: 60vh;
+  min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/asset/you.jpg") no-repeat center center/cover;
   display: flex;
@@ -399,7 +399,7 @@
 }
 
 .conformometer-hero {
-  min-height: 80vh;
+  min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/asset/test.jpg") no-repeat center center/cover;
   display: flex;
