@@ -558,18 +558,29 @@
       }
 
       .about-hero {
-        display: flex;
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: flex;
         height: 100vh;
-        background-image: url("asset/dark.jpg");
         text-align: center;
         color: white;
         z-index: 1;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
       }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        inset: -50%; /* dilebarkan agar tetap penuh */
+        background: url("asset/man2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotate(180deg); /* ganti angka sesuai arah rotasi */
+        z-index: -1;
+      }
+
       .about-hero .about-content {
         background: transparent;
         color: rgb(255, 255, 255);
