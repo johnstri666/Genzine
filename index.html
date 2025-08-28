@@ -593,7 +593,6 @@
       .about-hero h1 {
         font-weight: 300;
         font-size: 20px;
-        opacity: 0.9px;
         letter-spacing: 1px;
         text-align: center;
       }
@@ -1023,6 +1022,9 @@
         .about-page .section .mission-list .mission-text {
           font-size: 16px;
         }
+        .next-section h2 {
+          font-size: 2.5rem;
+        }
       }
 
       @media (max-width: 480px) {
@@ -1451,16 +1453,17 @@
 
       .features-container {
         padding: 80px 20px;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
       .features-intro {
+        display: block;
         text-align: center;
         margin-bottom: 60px;
       }
 
-      .features-container .features-intro h2 {
+      .features-intro h2 {
         font-size: 3rem;
         font-weight: 300;
         color: #ffffff;
@@ -1473,6 +1476,11 @@
         max-width: 900px;
         margin: 0 auto;
         line-height: 1.6;
+      }
+
+      .feature-image {
+        max-width: 100%;
+        height: auto;
       }
 
       .floating-elements {
@@ -1529,8 +1537,8 @@
       .menu-bar {
         display: flex;
         background-color: #666;
-        border-bottom: 2px solid rgb(255, 255, 255);
         margin: 0;
+        padding: 0;
       }
 
       .menu-item {
@@ -1547,7 +1555,7 @@
       }
 
       .menu-item:hover {
-        background-color: #555;
+        background-color: #666;
       }
 
       .menu-item.active {
@@ -1557,11 +1565,11 @@
 
       .contentx {
         background-color: rgb(17, 17, 17);
-        padding: 20px 10px;
+        padding: 20px 30px;
       }
 
       .content-sectionfeat {
-        max-width: 800px;
+        max-width: 1000px;
         justify-content: center;
         text-align: center;
       }
@@ -1617,12 +1625,16 @@
       }
 
       .titlex {
-        color: black;
-        margin-top: -4rem;
-        margin-bottom: 10px;
-        font-size: 22px;
-        background-color: white;
-        padding: 5px 3px;
+        border: none;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        margin-bottom: 30px;
+        font-size: 25px;
+        padding: 5px 7px;
+        cursor: pointer;
+      }
+      .titlex:hover {
+        color: #666;
       }
 
       .zones {
@@ -2354,12 +2366,15 @@
 
         <div class="contentx">
           <div id="genzopedia-content" class="content-sectionfeat">
-            <h1 class="titlex">GenZopedia</h1>
+            <button class="titlex" onclick="showPage('genzopedia')">
+              GenZopedia
+            </button>
             <img
               src="asset/book.jpg"
               width="100%"
               height="90%"
               class="feature-image"
+              style="border-radius: 10px"
             />
             <div class="feature-description">
               Genzopedia memberi kamu akses untuk membaca dan memahami berbagai
@@ -2377,13 +2392,14 @@
             class="content-sectionfeat"
             style="display: none"
           >
-            <h1 class="titlex">Conformometer</h1>
+            <button class="titlex" onclick="exploreFeature('Comfort')">
+              Conformometer
+            </button>
             <img
               src="asset/test.jpg"
               width="100%"
               height="90%"
               class="feature-image"
-              style="border-radius: 10px"
             />
             <div class="feature-description">
               Conformometer merupakan kuis reflektif berbasis The Conformity
@@ -2403,7 +2419,9 @@
             class="content-sectionfeat"
             style="display: none"
           >
-            <h1 class="titlex">BeYou</h1>
+            <button class="titlex" onclick="exploreFeature('BeYou')">
+              BeYou
+            </button>
             <img
               src="asset/you.jpg"
               width="100%"
