@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="style/style.css" />
 
     <style>
+      :root {
+        --bluex: #0691f4;
+      }
       * {
         margin: 0;
         padding: 0;
@@ -65,7 +68,7 @@
       }
 
       .header.transparent .logo {
-        color: rgb(0, 0, 0);
+        color: white;
       }
       .header.transparent .logo span {
         color: rgb(255, 255, 255);
@@ -128,8 +131,8 @@
       /* Hero Section */
       .hero {
         height: 100vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-          url("asset/background.jpg") no-repeat center center/cover;
+        background: linear-gradient(rgba(0, 0, 0, 0.291), rgba(0, 0, 0, 0.187)),
+          url("asset/bg3.jpg") no-repeat center center/cover;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -301,7 +304,7 @@
 
       .choice-subtitle {
         font-size: 18px;
-        color: #666;
+        color: #999;
         margin-bottom: 15px;
         font-weight: 400;
       }
@@ -395,7 +398,7 @@
       }
 
       .here {
-        min-height: 50vh;
+        min-height: 90vh;
         background: url("asset/idea2.jpg");
         background-size: cover;
         background-position: center;
@@ -461,7 +464,7 @@
         flex: 1;
         font-size: 1.3rem;
         line-height: 1.7;
-        color: #888;
+        color: #ffffff;
       }
 
       /* Hamburger Menu Styles */
@@ -558,27 +561,17 @@
       }
 
       .about-hero {
-        position: relative;
         display: flex;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 100vh;
+        background-image: url("asset/dark.jpg");
         text-align: center;
         color: white;
         z-index: 1;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
-      }
-
-      .about-hero::before {
-        content: "";
-        position: absolute;
-        inset: -50%; /* dilebarkan agar tetap penuh */
-        background: url("asset/man2.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        transform: rotate(180deg); /* ganti angka sesuai arah rotasi */
-        z-index: -1;
       }
 
       .about-hero .about-content {
@@ -789,6 +782,7 @@
           grid-template-columns: 1fr;
           gap: 50px;
           text-align: center;
+          max-width: 900px;
         }
 
         .choice-container {
@@ -826,7 +820,7 @@
 
       .next-section {
         height: 100vh;
-        background-image: url("asset/explore.jpg");
+        background-image: url("asset/explore2.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -935,7 +929,7 @@
       }
 
       .bottom-title-section {
-        background: #333;
+        background: var(--bluex);
         padding: 20px 30px;
         border-radius: 12px;
         margin-bottom: 20px;
@@ -1070,7 +1064,7 @@
       }
 
       .title {
-        color: white;
+        color: var(--bluex);
         font-size: 28px;
         margin-bottom: 40px;
       }
@@ -1112,7 +1106,7 @@
 
       .card-content {
         font-size: 18px;
-        color: #666;
+        color: #999;
       }
 
       .vision {
@@ -1133,7 +1127,7 @@
       .icon-container {
         width: 100px;
         height: 100px;
-        background: #181818;
+        background: var(--bluex);
         border-radius: 10px;
         margin: 0 auto 30px;
         display: flex;
@@ -1165,7 +1159,7 @@
         transform: translateX(-50%);
         width: 50px;
         height: 3px;
-        background: #666;
+        background: #ffffff;
         border-radius: 2px;
       }
 
@@ -1208,7 +1202,7 @@
       .mission-number {
         width: 35px;
         height: 35px;
-        background: #666;
+        background: #000715de;
         color: white;
         border-radius: 50%;
         display: flex;
@@ -1218,6 +1212,7 @@
         font-size: 14px;
         margin-right: 20px;
         flex-shrink: 0;
+        box-shadow: 0 4px 15px rgba(137, 102, 234, 0.3);
       }
 
       .mission-text {
@@ -1304,7 +1299,7 @@
         width: 250px;
         height: 250px;
         object-fit: cover;
-        border-radius: 20px; /* Rounded corners */
+        border-radius: 10px; /* Rounded corners */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
 
@@ -1559,8 +1554,8 @@
       }
 
       .menu-item.active {
-        background-color: #ffffff;
-        color: black;
+        background-color: var(--bluex);
+        color: rgb(255, 255, 255);
       }
 
       .contentx {
@@ -1585,7 +1580,7 @@
       }
 
       .explore-btn {
-        background-color: #1f1f1f;
+        background-color: #000000;
         color: white;
         padding: 20px 100px;
         border: none;
@@ -1644,7 +1639,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-        margin: 25px 0;
+        margin: 2px 0;
         max-width: 900px;
       }
 
@@ -1681,7 +1676,7 @@
       }
 
       .zone-yellow .zone-color {
-        background-color: #f59e0b;
+        background-color: #ffb029;
       }
 
       .zone-red .zone-color {
@@ -2052,7 +2047,7 @@
         </div>
 
         <div class="bottom-title-section">
-          <h3 class="bottom-title">Kalau iya, kamu nggak sendiri</h3>
+          <h3 class="bottom-title">Kalau iya, kamu nggak sendiri !</h3>
         </div>
 
         <div class="bottom-text-section">
@@ -2106,7 +2101,7 @@
       <section class="here">
         <div class="container">
           <div class="content">
-            <h1 class="title">Kenapa GENZINE ?</h1>
+            <h1 class="title">Kenapa Genzine ?</h1>
 
             <ul class="feature-list">
               <li class="feature-item">
@@ -2208,9 +2203,11 @@
       <!-- Content Section -->
       <section class="content-sectionx" id="content-sectionx">
         <div class="top-text">
-          <h1>Generation Z Identity & Empowerment</h1>
+          <h1 style="color: var(--bluex)">
+            Generation Z Identity & Empowerment
+          </h1>
           <p>
-            GENZINE lahir dari keprihatinan terhadap fenomena remaja yang sering
+            Genzine lahir dari keprihatinan terhadap fenomena remaja yang sering
             terbawa arus sosial, tekanan teman & tren media digital. Di era
             digital, remaja menghadapi tantangan dalam membangun identitas diri.
             Banyak yang merasa harus menyesuaikan diri agar diterima, sering
@@ -2219,10 +2216,7 @@
         </div>
 
         <div class="image-container">
-          <img
-            src="asset/wallpaperflare.com_wallpaper.jpg"
-            class="main-image"
-          />
+          <img src="asset/explore.jpg" class="main-image" />
         </div>
 
         <div class="bottom-text-section">
@@ -2295,7 +2289,7 @@
 
       <!--Our Team-->
       <section class="team-container">
-        <h2>Meet Our Team</h2>
+        <h2 style="color: var(--bluex)">Meet Our Team</h2>
         <div class="team-members">
           <div class="team-member">
             <img src="asset/Team/silvia.jpg" alt="Silvia Manao" />
@@ -2425,7 +2419,7 @@
               BeYou
             </button>
             <img
-              src="asset/you.jpg"
+              src="asset/secondx.jpg"
               width="100%"
               height="90%"
               class="feature-image"
@@ -3218,39 +3212,8 @@
         </div>
       </section>
 
-      <div class="textx">
-        <h1>Conformometer</h1>
-        <p>
-          Tes Tendensi Konformitas - Ukur seberapa jauh kamu ikut arus sosial
-        </p>
-      </div>
+      <div class="textx"></div>
       <div class="contentxx" id="intro">
-        <h3>Zona Hasil</h3>
-        <div class="zones">
-          <div class="zone-item zone-green">
-            <div class="zone-color"></div>
-            <div class="zone-text">
-              <strong>Authentic Self (Hijau)</strong> – Kamu lebih mandiri,
-              punya pendirian, dan tidak mudah terbawa arus.
-            </div>
-          </div>
-          <div class="zone-item zone-yellow">
-            <div class="zone-color"></div>
-            <div class="zone-text">
-              <strong>Seekers (Kuning)</strong> – Kamu kadang masih mencari jati
-              diri dan menyesuaikan diri dengan kelompok.
-            </div>
-          </div>
-          <div class="zone-item zone-red">
-            <div class="zone-color"></div>
-            <div class="zone-text">
-              <strong>Conformers (Merah)</strong> – Kamu cenderung ikut arus
-              tanpa banyak refleksi, penting untuk belajar mengenali diri lebih
-              dalam.
-            </div>
-          </div>
-        </div>
-
         <p>
           <strong>Tujuan Fitur</strong> <br />
           Memberikan pemahaman awal tentang tingkat konformitas sosial seseorang
@@ -3275,6 +3238,32 @@
           gambaran awal tentang bagaimana kamu menempatkan diri dalam dinamika
           sosial remaja.
         </p>
+
+        <p><strong>Zona Hasil</strong></p>
+        <div class="zones">
+          <div class="zone-item zone-green">
+            <div class="zone-color"></div>
+            <div class="zone-text">
+              <strong>Authentic Self (Hijau)</strong> – Kamu lebih mandiri,
+              punya pendirian, dan tidak mudah terbawa arus.
+            </div>
+          </div>
+          <div class="zone-item zone-yellow">
+            <div class="zone-color"></div>
+            <div class="zone-text">
+              <strong>Seekers (Kuning)</strong> – Kamu kadang masih mencari jati
+              diri dan menyesuaikan diri dengan kelompok.
+            </div>
+          </div>
+          <div class="zone-item zone-red">
+            <div class="zone-color"></div>
+            <div class="zone-text">
+              <strong>Conformers (Merah)</strong> – Kamu cenderung ikut arus
+              tanpa banyak refleksi, penting untuk belajar mengenali diri lebih
+              dalam.
+            </div>
+          </div>
+        </div>
 
         <button class="btn btn-primary" onclick="startQuiz()">Mulai Tes</button>
       </div>
