@@ -1,3 +1,7 @@
+:root {
+  --bluex: #0691f4;
+}
+
 /* Halaman GenZopedia */
 .genzopedia-page {
   min-height: auto;
@@ -6,7 +10,7 @@
 
 .genzopedia-hero {
   height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.218), rgba(0, 0, 0, 0.641)),
     url("/asset/book.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -60,7 +64,7 @@
 
 .article-info h3 {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: white;
 }
 
 .article-info p {
@@ -71,7 +75,7 @@
 .read-more {
   display: inline-block;
   margin-top: 15px;
-  color: #2196f3;
+  color: var(--bluex);
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -205,7 +209,7 @@
 .beyou-hero {
   min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("/asset/you.jpg") no-repeat center center/cover;
+    url("/asset/secondx.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -418,4 +422,3 @@
 .conformometer-hero .feature-hero-content p {
   font-size: 2.5rem;
 }
-
